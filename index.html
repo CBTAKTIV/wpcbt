@@ -7,37 +7,47 @@
     <title>CashBack Token (CBT)</title>
     <style>
         body {
-            background-color: #333; /* Цвет темного фона */
-            color: #fff; /* Цвет текста */
-            font-family: Arial, sans-serif; /* Шрифт текста */
-            padding: 20px; /* Внутренние отступы для контента */
-            animation: blink 2s infinite; /* Анимация мигания текста */
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            animation: blink 2s infinite;
         }
 
         h1 {
-            text-align: center; /* Выравнивание заголовка по центру */
-            border: 2px solid #fff; /* Рамка вокруг заголовка */
-            padding: 10px; /* Внутренние отступы для заголовка */
-            position: relative; /* Позиционирование элемента относительно самого себя */
+            text-align: center;
+            border: 2px solid #fff;
+            padding: 10px;
+            position: relative;
         }
 
         .rotate-arrows {
-            color: #00ff00; /* Зеленый цвет стрелочек */
+            color: #00ff00;
             font-size: 24px;
-            position: absolute; /* Позиционирование абсолютно относительно родительского элемента */
-            top: 50%; /* Расположение сверху на 50% относительно родителя */
-            left: 50%; /* Расположение слева на 50% относительно родителя */
-            transform: translate(-50%, -50%) rotate(0deg); /* Смещение на 50% от ширины и высоты, начальный угол вращения 0 градусов */
-            animation: rotate 4s infinite; /* Анимация вращения стрелочек */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            animation: rotate 4s infinite;
+        }
+
+        .rotate-dollar {
+            color: #00ff00;
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            animation: rotate 4s infinite;
         }
 
         p {
-            text-align: justify; /* Выравнивание текста по ширине */
+            text-align: justify;
         }
 
         @keyframes blink {
             50% {
-                opacity: 0.5; /* Полу-прозрачность на полпути анимации */
+                opacity: 0.5;
             }
         }
 
@@ -54,7 +64,8 @@
 </head>
 
 <body>
-    <h1>CashBack Token (CBT) <span class="rotate-arrows">&#10140;&#10140;</span></h1>
+    <h1>CashBack Token (CBT) <span class="rotate-arrows">&#10140;&#10140;&#10140;</span> <span
+            class="rotate-dollar">&#36;</span></h1>
     <p>
         CashBack Token (CBT) is an innovative cryptocurrency token developed on the TON blockchain, designed to return
         funds to users for their expenses. The uniqueness of CBT is that the token is distributed to everyone who
