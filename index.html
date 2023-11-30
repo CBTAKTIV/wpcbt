@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,18 +7,38 @@
     <title>CashBack Token (CBT)</title>
     <style>
         body {
-            background-color: #333;  
-            color: #fff;  
-            font-family: Arial, sans-serif;  
-            padding: 20px;  
+            background-color: #333; /* Цвет темного фона */
+            color: #fff; /* Цвет текста */
+            font-family: Arial, sans-serif; /* Шрифт текста */
+            padding: 20px; /* Внутренние отступы для контента */
+            animation: blink 2s infinite; /* Анимация мигания текста */
         }
 
         h1 {
-            text-align: center;  
+            text-align: center; /* Выравнивание заголовка по центру */
+            border: 2px solid #fff; /* Рамка вокруг заголовка */
+            padding: 10px; /* Внутренние отступы для заголовка */
+            animation: rotate 4s infinite; /* Анимация вращения заголовка */
         }
 
         p {
-            text-align: justify; 
+            text-align: justify; /* Выравнивание текста по ширине */
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0.5; /* Полу-прозрачность на полпути анимации */
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
@@ -34,6 +53,10 @@
         to exchange accumulated tokens for other digital assets with liquidity and participate in holding, farming, and
         staking programs.
     </p>
+</body>
+
+</html>
+
 </body>
 
 </html>
