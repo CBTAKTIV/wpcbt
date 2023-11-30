@@ -21,28 +21,29 @@
             position: relative;
         }
 
-        .rotate-arrows {
-            color: #00ff00;
-            font-size: 24px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(0deg);
-            animation: rotate 4s infinite;
-        }
-
         .rotate-dollar {
             color: #00ff00;
             font-size: 24px;
             position: absolute;
             top: 50%;
-            left: 50%;
+            left: 10px;
+            transform: translate(-50%, -50%) rotate(0deg);
+            animation: rotate 4s infinite;
+        }
+
+        .rotate-dollar-right {
+            color: #00ff00;
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
             transform: translate(-50%, -50%) rotate(0deg);
             animation: rotate 4s infinite;
         }
 
         p {
-            text-align: justify;
+            text-align: center;
+            margin-top: 20px;
         }
 
         @keyframes blink {
@@ -64,8 +65,8 @@
 </head>
 
 <body>
-    <h1>CashBack Token (CBT) <span class="rotate-arrows">&#10140;&#10140;&#10140;</span> <span
-            class="rotate-dollar">&#36;</span></h1>
+    <h1>CashBack Token (CBT) <span class="rotate-dollar">&#36;</span> <span class="rotate-dollar-right">&#36;</span>
+    </h1>
     <p>
         CashBack Token (CBT) is an innovative cryptocurrency token developed on the TON blockchain, designed to return
         funds to users for their expenses. The uniqueness of CBT is that the token is distributed to everyone who
