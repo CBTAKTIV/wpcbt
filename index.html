@@ -18,25 +18,19 @@
         }
 
         h1 {
-            border: 2px solid #fff;
-            padding: 5px; /* Уменьшенный размер padding */
+            padding: 5px;
             position: relative;
             display: inline-block;
         }
 
-        .logo-before,
-        .logo-after {
+        .logo {
             width: 30px;
             height: 30px;
             margin: 0 5px;
-        }
-
-        .logo-before {
-            margin-right: 20px;
-        }
-
-        .logo-after {
-            margin-left: 20px;
+            position: absolute;
+            top: -17px; /* Подбирайте значение top в зависимости от желаемого положения логотипа */
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         p {
@@ -61,8 +55,8 @@
 
     <div class="container">
         <h1>
-            <img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo" class="logo-before">
-            <span style="font-size: 24px;">CashBack Token (CBT)</span> <!-- Измененный размер текста -->
+            <img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo" class="logo">
+            <span style="font-size: 24px;">CashBack Token (CBT)</span>
         </h1>
         <p>
             <span id="english-text">CashBack Token (CBT) is an innovative cryptocurrency token developed on the TON blockchain, designed to return funds to users for their expenses. The uniqueness of CBT is that the token is distributed to everyone who provides screenshots of purchase receipts to the official Telegram CBT chat (airdrop)
