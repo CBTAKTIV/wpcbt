@@ -11,38 +11,37 @@
             color: #fff;
             font-family: Arial, sans-serif;
             padding: 20px;
-        }
-
-        .container {
-            text-align: center;
+            animation: blink 2s infinite;
         }
 
         h1 {
+            text-align: center;
             border: 2px solid #fff;
-            padding: 10px;
+            padding: 5px;
             position: relative;
-            display: inline-block;
         }
 
-        .logo-before,
-        .logo-after {
-            width: 48px;
-            height: 48px;
-            margin: 0 5px;
+        .rotate-dollar {
+            color: #00ff00;
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translate(-50%, -50%) rotate(0deg);
         }
 
-        .logo-before {
-            margin-right: 20px; /* Расстояние между левым логотипом и текстом */
-        }
-
-        .logo-after {
-            margin-left: 20px; /* Расстояние между правым логотипом и текстом */
+        .rotate-dollar-right {
+            color: #00ff00;
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translate(-50%, -50%) rotate(0deg);
         }
 
         p {
             text-align: center;
             margin-top: 20px;
-            animation: blink 2s infinite;
         }
 
         @keyframes blink {
@@ -59,20 +58,18 @@
         <button onclick="changeLanguage('ru')">Русский</button>
     </div>
 
-    <div class="container">
-        <h1>
-            <img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo" class="logo-before">
-            CashBack Token (CBT)
-            <img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo" class="logo-after">
-        </h1>
-        <p>
-            <span id="english-text">CashBack Token (CBT) is an innovative cryptocurrency token developed on the TON blockchain, designed to return funds to users for their expenses. The uniqueness of CBT is that the token is distributed to everyone who provides screenshots of purchase receipts to the official Telegram CBT chat (airdrop)
-                <a href="https://t.me/cashbacktoken" target="_blank">https://t.me/cashbacktoken</a>. Users have the opportunity to exchange accumulated tokens for other digital assets with liquidity and participate in holding, farming, and staking programs.
-            </span>
-            <span id="russian-text" style="display: none;">CashBack Token (CBT) — инновационный криптовалютный токен, разработанный на блокчейне TON, предназначенный для возврата средств пользователям за любые финансовые траты. Уникальность CBT заключается в том, что токен раздается всем, кто предоставляет скриншоты чеков о покупках в официальный чат Telegram CBT https://t.me/cashbacktoken. Пользователи имеют возможность обменять накопленные токены на другие цифровые активы с ликвидностью и участвовать в программах холд, фарминге и стейкинге.
-            </span>
-        </p>
-    </div>
+    <h1>
+        <span class="rotate-dollar">&#36;</span>
+        CashBack Token (CBT)
+        <span class="rotate-dollar-right">&#36;</span>
+    </h1>
+    <p>
+        <span id="english-text">CashBack Token (CBT) is an innovative cryptocurrency token developed on the TON blockchain, designed to return funds to users for their expenses. The uniqueness of CBT is that the token is distributed to everyone who provides screenshots of purchase receipts to the official Telegram CBT chat (airdrop)
+            <a href="https://t.me/cashbacktoken" target="_blank">https://t.me/cashbacktoken</a>. Users have the opportunity to exchange accumulated tokens for other digital assets with liquidity and participate in holding, farming, and staking programs.
+        </span>
+        <span id="russian-text" style="display: none;">CashBack Token (CBT) — инновационный криптовалютный токен, разработанный на блокчейне TON, предназначенный для возврата средств пользователям за любые финансовые траты. Уникальность CBT заключается в том, что токен раздается всем, кто предоставляет скриншоты чеков о покупках в официальный чат Telegram CBT https://t.me/cashbacktoken. Пользователи имеют возможность обменять накопленные токены на другие цифровые активы с ликвидностью и участвовать в программах холд, фарминге и стейкинге.
+        </span>
+    </p>
 
     <!-- Добавлен iframe для PDF-файла -->
     <iframe id="pdf-frame" src="https://cbtaktiv.github.io/wpcbt/WP(EN)%20CashBack%20Token%20(CBT).pdf" width="100%" height="1000px"></iframe>
