@@ -20,26 +20,20 @@
             position: relative;
         }
 
-        .rotate-logo {
-            width: 48px; /* Уменьшил размер в 10 раз */
-            height: 48px; /* Уменьшил размер в 10 раз */
+        .logo-before {
+            width: 48px;
+            height: 48px;
             position: absolute;
             top: 50%;
-            left: 10px;
-            transform-origin: top left; /* Изменил точку вращения */
-            transform: translate(0, -50%) rotate(0deg);
-            animation: rotate 4s infinite;
+            left: -60px; /* Расположение перед текстом */
         }
 
-        .rotate-logo-after {
-            width: 48px; /* Уменьшил размер в 10 раз */
-            height: 48px; /* Уменьшил размер в 10 раз */
+        .logo-after {
+            width: 48px;
+            height: 48px;
             position: absolute;
             top: 50%;
-            right: 10px;
-            transform-origin: top right; /* Изменил точку вращения */
-            transform: translate(0, -50%) rotate(0deg);
-            animation: rotate 4s infinite;
+            right: -60px; /* Расположение после текста */
         }
 
         p {
@@ -53,16 +47,6 @@
                 opacity: 0.5;
             }
         }
-
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
     </style>
 </head>
 
@@ -73,9 +57,9 @@
     </div>
 
     <h1>
-        <span class="rotate-logo"><img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo"></span>
+        <img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo" class="logo-before">
         CashBack Token (CBT)
-        <span class="rotate-logo-after"><img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo"></span>
+        <img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo" class="logo-after">
     </h1>
     <p>
         <span id="english-text">CashBack Token (CBT) is an innovative cryptocurrency token developed on the TON blockchain, designed to return funds to users for their expenses. The uniqueness of CBT is that the token is distributed to everyone who provides screenshots of purchase receipts to the official Telegram CBT chat (airdrop)
