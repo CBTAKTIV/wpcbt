@@ -21,22 +21,24 @@
         }
 
         .rotate-logo {
-            width: 24px;
-            height: 24px;
+            width: 48px; /* Уменьшил размер в 10 раз */
+            height: 48px; /* Уменьшил размер в 10 раз */
             position: absolute;
             top: 50%;
             left: 10px;
-            transform: translate(-50%, -50%) rotate(0deg);
+            transform-origin: top left; /* Изменил точку вращения */
+            transform: translate(0, -50%) rotate(0deg);
             animation: rotate 4s infinite;
         }
 
         .rotate-logo-after {
-            width: 24px;
-            height: 24px;
+            width: 48px; /* Уменьшил размер в 10 раз */
+            height: 48px; /* Уменьшил размер в 10 раз */
             position: absolute;
             top: 50%;
             right: 10px;
-            transform: translate(-50%, -50%) rotate(0deg);
+            transform-origin: top right; /* Изменил точку вращения */
+            transform: translate(0, -50%) rotate(0deg);
             animation: rotate 4s infinite;
         }
 
