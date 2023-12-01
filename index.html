@@ -31,6 +31,16 @@
             top: -17px; /* Подбирайте значение top в зависимости от желаемого положения логотипа */
             left: 50%;
             transform: translateX(-50%);
+            animation: rotate 4s infinite linear;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translateX(-50%) rotate(0deg);
+            }
+            to {
+                transform: translateX(-50%) rotate(360deg);
+            }
         }
 
         p {
