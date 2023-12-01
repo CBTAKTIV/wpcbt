@@ -77,8 +77,8 @@
         </p>
     </div>
 
-    <!-- Добавлен iframe для PDF-файла с атрибутом sandbox -->
-    <iframe id="pdf-frame" src="https://cbtaktiv.github.io/wpcbt/WP(EN)%20CashBack%20Token%20(CBT).pdf" width="100%" height="500px" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+   <!-- Обновленный iframe для PDF-файла с использованием JavaScript -->
+    <iframe id="pdf-frame" src="https://cbtaktiv.github.io/wpcbt/WP(EN)%20CashBack%20Token%20(CBT).pdf" width="100%" style="border: none;"></iframe>
 
     <script>
         function changeLanguage(lang) {
@@ -93,6 +93,18 @@
                 pdfFrame.src = 'https://cbtaktiv.github.io/wpcbt/WP(RU)%20CashBack%20Token%20(CBT).pdf';
             }
         }
+
+        // Обновленная функция изменения высоты iframe
+        function setIframeHeight() {
+            var pdfFrame = document.getElementById('pdf-frame');
+            pdfFrame.style.height = pdfFrame.contentWindow.document.body.scrollHeight + 'px';
+        }
+
+        // Вызов функции при загрузке iframe
+        document.getElementById('pdf-frame').onload = setIframeHeight;
+
+        // Вызов функции при изменении размеров окна
+        window.onresize = setIframeHeight;
     </script>
 </body>
 
