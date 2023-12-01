@@ -30,6 +30,24 @@
             animation: rotate 4s infinite;
         }
 
+        .rotate-logo-before,
+        .rotate-logo-after {
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: rotate 4s infinite;
+        }
+
+        .rotate-logo-before {
+            left: calc(50% - 100px);
+        }
+
+        .rotate-logo-after {
+            left: calc(50% + 60px);
+        }
+
         p {
             text-align: center;
             margin-top: 20px;
@@ -44,11 +62,11 @@
 
         @keyframes rotate {
             from {
-                transform: translate(-50%, -50%) rotate(0deg);
+                transform: rotate(0deg);
             }
 
             to {
-                transform: translate(-50%, -50%) rotate(360deg);
+                transform: rotate(360deg);
             }
         }
     </style>
@@ -60,7 +78,11 @@
         <button onclick="changeLanguage('ru')">Русский</button>
     </div>
 
-    <h1>CashBack Token (CBT) <img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo" class="rotate-logo"> </h1>
+    <h1>
+        <span class="rotate-logo-before"><img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo"></span>
+        CashBack Token (CBT)
+        <span class="rotate-logo-after"><img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo"></span>
+    </h1>
     <p>
         <span id="english-text">CashBack Token (CBT) is an innovative cryptocurrency token developed on the TON blockchain, designed to return funds to users for their expenses. The uniqueness of CBT is that the token is distributed to everyone who provides screenshots of purchase receipts to the official Telegram CBT chat (airdrop)
             <a href="https://t.me/cashbacktoken" target="_blank">https://t.me/cashbacktoken</a>. Users have the opportunity to exchange accumulated tokens for other digital assets with liquidity and participate in holding, farming, and staking programs.
