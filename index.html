@@ -21,31 +21,23 @@
         }
 
         .rotate-logo {
-            width: 48px;
-            height: 48px;
+            width: 24px;
+            height: 24px;
             position: absolute;
             top: 50%;
-            left: 50%;
+            left: 10px;
             transform: translate(-50%, -50%) rotate(0deg);
             animation: rotate 4s infinite;
         }
 
-        .rotate-logo-before,
         .rotate-logo-after {
-            width: 48px;
-            height: 48px;
+            width: 24px;
+            height: 24px;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            right: 10px;
+            transform: translate(-50%, -50%) rotate(0deg);
             animation: rotate 4s infinite;
-        }
-
-        .rotate-logo-before {
-            left: calc(50% - 100px);
-        }
-
-        .rotate-logo-after {
-            left: calc(50% + 60px);
         }
 
         p {
@@ -79,7 +71,7 @@
     </div>
 
     <h1>
-        <span class="rotate-logo-before"><img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo"></span>
+        <span class="rotate-logo"><img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo"></span>
         CashBack Token (CBT)
         <span class="rotate-logo-after"><img src="https://cbtaktiv.github.io/wpcbt/cbtlogo.png" alt="CBT Logo"></span>
     </h1>
